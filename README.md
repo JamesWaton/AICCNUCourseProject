@@ -1,2 +1,1 @@
-# fbooking-site
-CSIT 214 Group Project
+CCNU AI Winter course project
