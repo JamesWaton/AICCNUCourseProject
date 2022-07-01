@@ -1,0 +1,176 @@
+#navi{
+  padding-right:10px;
+}
+#Book{
+  /* display:; */
+}
+#welcometext{
+  font-size:5em;
+  margin:0;
+  padding:0;
+  text-align:center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+#flights-container{
+  text-align:center;
+  position:relative;
+  transform:translateY(20%);
+}
+#img1:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#img2:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#img3:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#f1:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#f2:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#f3:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+
+.selImg{
+  -webkit-filter: grayscale(100%);
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.brief {
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.flight-container {
+  margin: 20px;
+}
+
+
+.flight-container select {
+  background-color: #f8f9fa;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+}
+
+.container {
+  background-image:url(images/plane.png);
+  height:700px;
+  width:780px;
+  margin-bottom: 30px;
+  position: absolute;
+}
+
+.seat {
+  background-color: #ebebff;
+  height: 50px;
+  width: 30px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+
+}
+
+.seat.selected {
+  background-color: #ec5c7b;
+}
+
+.seat.occupied {
+  background-color: #4e4ae3;
+}
+
+.seat:nth-of-type(3) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(3) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+
+p.text1 {
+  position: absolute;
+  right: 30%;
+}
+p.text {
+  position: absolute;
+  right: 30%;
+}
+
+p.text span {
+  color: #6feaf6;
+  /* visibility: hidden; */
+}
+
+.flight2{
+  position: absolute;
+  right: 100px;
+}
+
