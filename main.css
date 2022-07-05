@@ -1,6 +1,12 @@
 #navi{
   padding-right:10px;
 }
+.navbar{
+  background-color: #fefeff;
+}
+body{
+  background-image:url(' background.JPG');
+}
 #Book{
   /* display:; */
 }
@@ -154,7 +160,50 @@
   display: flex;
 }
 
+#lecDiv{
+  position: absolute;
+  left: 30%;
+  margin-top: 5%;
+}
+#assingmentDiv{
+  position: absolute;
+  right: 20%;
+  
+  /* margin-top: 2%; */
+}
 
+#updateBtn{
+  position: absolute !important;
+}
+
+#boxBackground{
+  background-color: #c4e2ff;
+  
+}
+
+.containerDiv{
+	max-width: 80%;
+height:40em ;
+  margin-Top: 5%;
+  /* margin-bottom: 5%; */
+  margin-left: 15%;
+  margin-right: 15%;		
+  background-color: #f8fbff;
+  box-shadow:#777;
+}
+
+.updateBtn{
+  background-color: #1047f7;
+  color: #ffffff;
+  font-size: 20px;
+  /* font-weight: bold;   */
+}
+.changeModeBtn{
+  background-color: #1047f7;
+  color: #ffffff;
+  font-size: 17px;
+  /* font-weight: bold;   */ 
+}
 p.text1 {
   position: absolute;
   right: 30%;
@@ -173,4 +222,11 @@ p.text span {
   position: absolute;
   right: 100px;
 }
+ .logo-image{
+  width:70%;
+  /* height: 60px; */
+  /* border-radius: 50%; */
+  overflow: hidden;
+  /* margin-top: -6px; */
+} 
 

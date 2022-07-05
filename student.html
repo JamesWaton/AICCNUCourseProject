@@ -14,8 +14,12 @@
   </head>
   <body>
     <!-- NAVIGATION BAR HERE -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <a href="index.html" class="navbar-brand"></a>
+    <nav class="navbar navbar-expand-sm navbar-light ">
+        <a href="index.html" class="navbar-brand">
+          <div class="logo-image">
+            <img src="images/Logo.JPG" class="img-fluid">
+      </div>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,11 +32,11 @@
               <!-- <a href="food.html" class="nav-link"> Food </a> -->
             </li>
             <li class="nav-item">
-              <a href="student.html" class="nav-link"> Currently in Student mode </a>
+              <a href="teacher.html" class="nav-link"> Currently in teacher mode </a>
             </li>
             <li class="nav-item">
               <form class="form-inline">
-                <button class="btn btn-info" type="button" onclick="window.location.href='teacher.html'">Teacher Mode</button>
+                <button class="btn changeModeBtn"  type="button" onclick="window.location.href='teacher.html'">Teacher Mode</button>
               </form>
             </li>
           </ul>
@@ -41,49 +45,54 @@
     <!-- Body here -->
     <h1 class="display-1 text-center">Student mode</h1>
 
- 
+    <div class="containerDiv">
+        <div id="lecDiv">
 
-    <p class="text1">
+    <!-- <p class="text1"> -->
  
       <label>Lectures:</label>
       <br/>
       <br/>
-      <label>Lecture 1:</label> <br><button id="btnLec1" class="btn btn-info btnLec1" type="button">Open</button>
+      <label>Lecture 1:</label> <br><button id="btnLec1" class="btn changeModeBtn btnLec1" type="button">Open</button>
 
      
       <br/>
       
-      <label>Lecture 2:</label><br><button class="btn btn-info" type="button">Open</button>
+      <label>Lecture 2:</label><br><button class="btn changeModeBtn" type="button">Open</button>
       <br/>
 
 
       
-      <label>Lecture 3:</label> <br><button class="btn btn-info" type="button">Open</button>
+      <label>Lecture 3:</label> <br><button class="btn changeModeBtn" type="button">Open</button>
       <br/>
 
       
 
       
-      <label>Lecture 4:</label><br><button class="btn btn-info" type="button">Open</button>
+      <label>Lecture 4:</label><br><button class="btn changeModeBtn" type="button">Open</button>
 
       <br/>
      
 
       
-      <label>Lecture 5:</label><br><button class="btn btn-info" type="button">Open</button>
+      <label>Lecture 5:</label><br><button class="btn changeModeBtn" type="button">Open</button>
       <br/>
 
      
 
       
-      <label>Lecture 6:</label><br><button id="lec6Btn" class="btn btn-info" type="button">Open</button>
+      <label>Lecture 6:</label><br><button id="lec6Btn" class="btn changeModeBtn" type="button">Open</button>
       <br/>
 
 
 
       
       <br/> <br/>
-     
+    </div>
+    <br/> <br/>
+    <br/> <br/>
+  
+<div id="assingmentDiv">
  
       <!-- <p class="text2"> -->
         <label>Assignments:</label>
@@ -112,6 +121,7 @@
         <input id="ass2Disp" type="button" value="Submit" onclick="submitAss2()">
         <br>
         <span id="score"></span>
+        <input id="ass2check" type="button" value="Check  " onclick="CheckAss2()" style="visibility: hidden;">
 
   
         <br/> <br/>
@@ -129,7 +139,7 @@
 
       
 
-    </p>
+    <!-- </p> -->
    
     <div>
 

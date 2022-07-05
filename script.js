@@ -5,6 +5,7 @@ const total = document.getElementById('total');
 const flightSelect = document.getElementById('flight');
 const ass2 = document.getElementById('ass2Display');
 const lec6 = document.getElementById('lec6Display');
+const studRes =  document.getElementById('studentOneScore');
 
 var hidden = false;
 // let ass2value = ass2.value;
@@ -17,9 +18,13 @@ function updateTeacher(){
  let ass2num = ass2.value
  if(ass2num==2){
   document.getElementById("ass2Submissions").style.visibility = 'visible';
+  //get local storage of students score 
+  console.log(localStorage.getItem('studentOneScore2'));
+  studRes.innerHTML = "student one got a score of: " + localStorage.getItem('studentOneScore2') ;
  }else{
   document.getElementById("ass2Submissions").style.visibility = 'hidden';
  }
+
 
 }
 
