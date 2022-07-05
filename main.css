@@ -7,55 +7,6 @@
 body{
   background-image:url(' background.JPG');
 }
-#Book{
-  /* display:; */
-}
-#welcometext{
-  font-size:5em;
-  margin:0;
-  padding:0;
-  text-align:center;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-}
-
-#flights-container{
-  text-align:center;
-  position:relative;
-  transform:translateY(20%);
-}
-#img1:hover{
-  cursor: default;
-  -webkit-filter: grayscale(50%);
-  transform: scale(1.1);
-}
-#img2:hover{
-  cursor: default;
-  -webkit-filter: grayscale(50%);
-  transform: scale(1.1);
-}
-#img3:hover{
-  cursor: default;
-  -webkit-filter: grayscale(50%);
-  transform: scale(1.1);
-}
-#f1:hover{
-  cursor: default;
-  -webkit-filter: grayscale(50%);
-  transform: scale(1.1);
-}
-#f2:hover{
-  cursor: default;
-  -webkit-filter: grayscale(50%);
-  transform: scale(1.1);
-}
-#f3:hover{
-  cursor: default;
-  -webkit-filter: grayscale(50%);
-  transform: scale(1.1);
-}
 
 .selImg{
   -webkit-filter: grayscale(100%);

@@ -40,37 +40,7 @@ function setflightData(flightIndex, flightPrice) {
 
 }
 
-// update total and count
-function updateSelectedCount() {
-  const selectedSeats = document.querySelectorAll('.row .seat.selected');
 
-  const seatsIndex = [...selectedSeats].map((seat) => [...seats].indexOf(seat));
-
-  localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
-
-  //copy selected seats into arr
-  // map through array
-  //return new array of indexes
-
-  const selectedSeatsCount = selectedSeats.length;
-
-  count.innerText = selectedSeatsCount;
-  total.innerText = selectedSeatsCount * ticketPrice;
-  localStorage.setItem('total',selectedSeatsCount * ticketPrice);
-}
-function submitSeats(int){
-
-  if (total.innerText==0){
-    alert("Please select a seat to continue");
-  }
-  else{
-    const info={
-      seats:count.innerText,
-      price:total.innerText
-    }
-    window.location.href="food.html";
-  }
-}
 
 
 // get data from localstorage and populate ui
@@ -99,7 +69,7 @@ flightSelect.addEventListener('change', (e) => {
 });
 
 //lec 6 event listener
-document.getElementById('lec6Display').addEventListener("click", recommendAss2);
+ document.getElementById('lec6Display').addEventListener("click", recommendAss2);
 document.getElementById('ass2Display').addEventListener("click", showAss2Submissions);
 
 function showAss2Submissions(){
@@ -107,6 +77,7 @@ function showAss2Submissions(){
   console.log(newAss2Value);
   if(newAss2Value==1){
     document.getElementById("ass2Submissions").style.visibility = 'hidden';
+    document.getElementById("studentOneScore").style.visibility = 'hidden';
   }else{
      document.getElementById("ass2Submissions").style.visibility = 'visible';
 }
@@ -116,6 +87,7 @@ function showAss2Submissions(){
 function recommendAss2(){
   console.log(lec6.value);
   if(lec6.value ==22 ){
+
      
 
   alert("Lec 6 has been upLoaded you should up load ass2");
@@ -125,14 +97,6 @@ function recommendAss2(){
  
 }
 
-// Seat click event
-container.addEventListener('click', (e) => {
-  if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) {
-    e.target.classList.toggle('selected');
-
-    updateSelectedCount();
-  }
-});
 
 
 
@@ -204,3 +168,4 @@ function teacherUpdate() {
 //   //     document.getElementById('btnLec1').style.visibility = 'visible';
 //   // }
 // }
+

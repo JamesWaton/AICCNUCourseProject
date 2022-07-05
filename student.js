@@ -41,12 +41,15 @@ console.log(overallScore);
 
 function submitAss2(){
     //question 1
+    document.getElementById('ass2Disp').style.visibility = 'hidden';
     if((a.value==2))
 {
      document.getElementById('q1Ans').innerHTML= 'correct';
     overallScore= overallScore+1;
     console.log("q1");
     console.log(overallScore + " q1");
+  
+
 
 }
 else
