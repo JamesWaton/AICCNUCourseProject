@@ -117,7 +117,7 @@ if (overallScore == 4){
 document.getElementById('score').innerHTML= "You got " + overallScore + " correct giving you " + intPercent;
  let storeScore = overallScore;
  localStorage.setItem('studentOneScore2',"");
-localStorage.setItem('studentOneScore2',overallScore);
+localStorage.setItem('studentOneScore2',intPercent);
 console.log(localStorage.getItem('studentOneScore2'));
 
 localStorage.setItem('ass2Score',storeScore);
