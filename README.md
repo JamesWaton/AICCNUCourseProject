@@ -1,1 +1,1 @@
-CCNU AI Winter course project
+CCNU AI in Education Summer course project
