@@ -90,7 +90,7 @@ function recommendAss2(){
 
      
 
-  alert("Lec 6 has been upLoaded you should up load ass2");
+//   alert("Lec 6 has been upLoaded you should up load ass2");
   }
 
   
